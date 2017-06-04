@@ -9,8 +9,28 @@
   </head>
   <body>
     <div class="container">
-      
+      <h1>Triangle Tracker</h1>
+      <h3>Input 3 side lengths below and see if your triangle is Equilateral, Isosceles, Scalene, or NOT a triangle</h3>
 
+      <form id="form-triangle">
+        <div class="form-group">
+          <label for="side1">Side 1: </label>
+          <input id="side1" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side2">Side 2: </label>
+          <input id="side2" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="side3">Side 3: </label>
+          <input id="side3" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div class="result">
+        <h3>Based on your side lengths, your triangle is <span id="result"></span>.</h3>
+      </div>
     </div>
   </body>
 </html>
